@@ -19,9 +19,4 @@ public class SimpleChopperTE extends TreeScript {
         isIdle.setRightNode(chop).setLeftNode(isInventoryFull);
     }
 
-    @Override
-    public void poll() {
-
-    }
-
 }
