@@ -17,6 +17,7 @@ public class SimpleChopperTE extends TreeScript {
         TreeNode chop = new Chop(ctx), drop = new Drop(ctx), ignored = new Ignored(ctx);
         isInventoryFull.setRightNode(drop).setLeftNode(ignored);
         isIdle.setRightNode(chop).setLeftNode(isInventoryFull);
+        rootNode = isIdle;
     }
 
 }
