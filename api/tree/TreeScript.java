@@ -14,7 +14,7 @@ public class TreeScript extends PollingScript<AdvancedBotContext> {
     }
 
     @Override
-    public void poll() {
+    public final void poll() {
         if(rootNode == null) {
             return;
         }
