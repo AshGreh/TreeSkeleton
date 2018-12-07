@@ -15,9 +15,6 @@ public class TreeScript extends PollingScript<AdvancedBotContext> {
 
     @Override
     public final void poll() {
-        if(rootNode == null) {
-            return;
-        }
         TreeNode currentNode = rootNode;
         while (!currentNode.isLeaf()) {
             currentNode = currentNode.getNextNode();
