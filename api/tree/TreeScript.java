@@ -7,7 +7,7 @@ import os.api.queries.AdvancedBotContext;
 
 public class TreeScript extends PollingScript<AdvancedBotContext> {
 
-    private TreeNode rootNode;
+    protected TreeNode rootNode;
 
     {
         rootNode = new Ignored(ctx);
